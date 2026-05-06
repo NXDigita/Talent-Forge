@@ -1,0 +1,473 @@
+# TALENT FORGE — Full-Stack Web Application Prompt
+## AI-First | Blockchain-Enabled | Gamified Talent Marketplace
+
+---
+
+## 🧠 PROJECT OVERVIEW
+
+Build a full-stack, responsive web application called **Talent Forge** — a next-generation AI-powered Talent Marketplace Platform for India. The platform connects skill-verified engineering graduates with startups, MSMEs, and enterprises through gamified assessments, real-world simulations, and blockchain-backed credentials.
+
+The app must have a **dark-professional design system** with a navy + electric blue + amber accent palette. It should feel like a cross between **Linear.app** (clean SaaS), **HackerRank** (assessment UX), and **Duolingo** (gamification energy).
+
+---
+
+## 🎨 DESIGN SYSTEM
+
+### Color Palette
+- Primary Background: `#0F172A` (slate-900)
+- Card Background: `#1E293B` (slate-800)
+- Border: `#334155` (slate-700)
+- Primary Blue: `#2563EB`
+- Electric Blue Accent: `#38BDF8`
+- Amber Accent: `#F59E0B`
+- Success Green: `#22C55E`
+- Text Primary: `#F8FAFC`
+- Text Secondary: `#94A3B8`
+- Gradient Hero: `linear-gradient(135deg, #0F172A 0%, #1E3A5F 50%, #0F172A 100%)`
+
+### Typography
+- Font: Inter (Google Fonts)
+- Hero Heading: 64px, bold, white with gradient text on key words
+- Section Heading: 36px, bold
+- Body: 16px, slate-300
+- Labels/Tags: 12px, uppercase, letter-spacing 0.1em
+
+### UI Style Rules
+- Rounded corners: `border-radius: 16px` on cards, `8px` on buttons
+- Cards: glassmorphism effect — `background: rgba(30,41,59,0.8)`, `backdrop-filter: blur(12px)`, `border: 1px solid rgba(255,255,255,0.08)`
+- Hover effects: subtle glow — `box-shadow: 0 0 24px rgba(37,99,235,0.3)`
+- Buttons: gradient fill `linear-gradient(90deg, #2563EB, #38BDF8)` with white text
+- Micro-animations: fade-in on scroll, slide-up for cards, pulse on badges
+- All icons: Lucide React icon set
+
+---
+
+## 🗂️ PAGES & ROUTES
+
+### 1. `/` — Landing Page (Marketing)
+### 2. `/for-students` — Student Value Page
+### 3. `/for-employers` — Employer Value Page
+### 4. `/for-colleges` — Institution / B2B SaaS Page
+### 5. `/assessment` — Assessment Demo Page
+### 6. `/marketplace` — Talent Marketplace Page
+### 7. `/dashboard/student` — Student Dashboard
+### 8. `/dashboard/employer` — Employer Dashboard
+### 9. `/pricing` — Pricing Page
+### 10. `/about` — About / Team Page
+
+---
+
+## 📄 PAGE-BY-PAGE SPECIFICATIONS
+
+---
+
+### PAGE 1: Landing Page `/`
+
+#### Navbar (Sticky, Glassmorphism)
+- Logo: "⚡ Talent Forge" in white bold, "by ResourceIndia.co" in amber small text
+- Nav Links: For Students | For Employers | For Colleges | Pricing | About
+- CTA Buttons: `Login` (ghost outline) + `Get Started Free` (gradient fill)
+- On scroll: navbar gains `backdrop-filter: blur(20px)` + subtle border bottom
+
+#### Hero Section
+- Badge chip at top: "🚀 India's First AI + Blockchain Talent Platform"
+- Main Headline (3 lines):
+  - Line 1: "Hire Smarter." (white)
+  - Line 2: "Prove Your Skills." (gradient: blue to cyan)
+  - Line 3: "Get Hired Faster." (white)
+- Subheadline: "The AI-powered marketplace that connects skill-verified engineers with top companies — using gamified assessments, real-world simulations, and blockchain credentials."
+- Two CTA Buttons:
+  - `Start Your Free Assessment →` (gradient, large)
+  - `Post a Project` (ghost outline)
+- Trust bar below buttons: "Trusted by 500+ Companies · 50,000+ Students · 200+ Colleges"
+- Hero Visual (right side): Animated dashboard mockup card showing:
+  - A user profile with a circular "Talent Score" gauge (87/100)
+  - 3 skill badges with a glowing NFT icon
+  - A "New Match Found" notification card
+  - Floating mini-cards with: "₹35,000 earned", "12 Projects", "Expert Tier"
+
+#### Stats Strip (dark card, full width)
+Four animated counter stats:
+- `50M+` — Target Graduate Market
+- `₹120 Cr` — Y3 Revenue Projection  
+- `95%` — Quality Assurance Rate
+- `48 hrs` — Average Project Start Time
+
+#### How It Works Section
+Title: "One Platform. Three Superpowers."
+Three horizontal step cards with icons:
+1. 🧠 **Assess** — "Take our AI-adaptive psychometric test. Get your Talent Forge Employability Score (TFES)."
+2. 🎮 **Prove** — "Complete real-world simulations and missions. Earn blockchain-verified NFT badges."
+3. 🚀 **Get Hired** — "Get AI-matched to projects and jobs. Employers see your proof, not just your resume."
+
+#### Domain Coverage Section
+Title: "Built for Every Engineer"
+Six domain cards in a 3x2 grid:
+- ⚡ ECE / Electronics — Circuit sims, embedded systems, IoT
+- 🔌 EEE / Electrical — Power systems, motor control, SCADA
+- ⚙️ Mechanical — CAD challenges, FEA, process optimization
+- 💻 Computer Science — DSA, full-stack, ML pipelines
+- 📊 Business / Non-Tech — Sales sims, case studies, communication
+- 🤖 AI / Data — Model building, analytics, Python challenges
+Each card: domain icon, name, 3 bullet skill areas, a "View Challenges →" link
+
+#### Gamification Preview Section
+Title: "Level Up Your Career"
+Left side: Vertical progression tree showing 5 tiers:
+- 🔵 Explorer (Level 1)
+- 🟢 Apprentice (Level 2)
+- 🟡 Practitioner (Level 3)
+- 🟠 Expert (Level 4)
+- 🔴 Master (Level 5)
+Each tier: icon, name, unlocks description, earnings range
+Right side: Animated card showing:
+- Current user at "Practitioner" tier
+- XP progress bar (75% to next level)
+- Active mission: "Design a Low-Pass Filter — 2 days left"
+- Recent badge earned: "Embedded Systems Pro 🏆"
+
+#### Blockchain Credentials Section
+Title: "Your Proof. Forever. On-Chain."
+Dark card with left/right split:
+- Left: NFT badge mockup — hexagonal shape with glowing border, skill name, tier, date, "Verified on Polygon ✓"
+- Right: Three value props:
+  - 🔐 Tamper-proof — Cannot be faked or altered
+  - ⚡ Instant Verification — Employers verify in one click
+  - 🌐 Universally Accepted — Works on LinkedIn, NSDC, job portals
+
+#### Testimonials Section
+Title: "What They're Saying"
+3 testimonial cards:
+- Student: "I got my first ₹25,000 project within 3 weeks of joining. The AI matched me perfectly." — Priya R., ECE Graduate, Coimbatore
+- Employer: "We hired 4 interns through Talent Forge. Zero bad hires. The skill scores are actually real." — Rahul M., CTO, SaaS Startup, Pune
+- College: "Our placement rate jumped 38% in one semester after integrating Talent Forge." — Dr. Anitha K., TPO, Engineering College, Madurai
+
+#### CTA Banner (Full Width)
+Dark gradient background with amber glow
+Headline: "Ready to Transform Your Career or Hiring?"
+Two buttons side by side: `I'm a Student` | `I'm an Employer`
+
+#### Footer
+Four columns:
+- Col 1: Logo + tagline + social icons (LinkedIn, Twitter, YouTube, Discord)
+- Col 2: Platform — Assessment, Marketplace, Credentials, Sandbox Lab
+- Col 3: Company — About, Blog, Careers, Press
+- Col 4: Contact — Email, WhatsApp number, "Book a Demo" link
+Bottom strip: "© 2025 ResourceIndia.co · Talent Forge · Privacy Policy · Terms of Service"
+
+---
+
+### PAGE 2: `/for-students` — Student Value Page
+
+#### Hero
+Title: "From Graduate to Hired — In Weeks, Not Months"
+Subtitle: "Get AI-assessed, earn real project income, build a blockchain portfolio, and get matched to jobs — all in one place."
+CTA: `Start Free Assessment`
+
+#### Journey Timeline (Horizontal, animated)
+5 steps with connecting line:
+1. Sign Up Free → 2. Take AI Assessment → 3. Get TFES Score → 4. Complete Missions → 5. Get Project + Job Matches
+
+#### Earnings Calculator (Interactive)
+Input slider: "Hours available per week" (5 to 40 hrs)
+Dropdown: Select Domain (ECE / Mech / CS / Business)
+Dropdown: Select Tier (Explorer to Expert)
+Output card updates live:
+- Estimated monthly earnings: ₹X,XXX
+- Typical projects available: XX
+- Average project duration: X days
+
+#### Feature Grid
+8 feature cards in 4x2 grid:
+- 🧠 Adaptive AI Assessment
+- 🎮 Gamified Skill Missions
+- 💰 Earn While Learning
+- 🏆 NFT Skill Badges
+- 🤖 AI Career Coaching
+- 👥 Peer Community
+- 📊 Portfolio Dashboard
+- 🚀 Direct Job Matching
+
+---
+
+### PAGE 3: `/for-employers` — Employer Value Page
+
+#### Hero
+Title: "Stop Interviewing. Start Verifying."
+Subtitle: "Access India's largest pool of AI-assessed, blockchain-verified engineering talent. Post a project and get matched candidates in 48 hours."
+CTAs: `Post a Project Free` | `Book a Demo`
+
+#### ROI Calculator (Interactive)
+Inputs:
+- "How many hires per quarter?" (slider 1–50)
+- "Current cost per hire?" (input, default ₹40,000)
+Output:
+- Current annual hiring spend: ₹X,XX,XXX
+- With Talent Forge: ₹X,XX,XXX (60–70% less)
+- Annual savings: ₹X,XX,XXX highlighted in green
+
+#### How Hiring Works (3 step cards)
+1. Post Project — Define scope, budget, required tier. AI scopes feasibility automatically.
+2. Review Scorecards — See AI-generated skill profiles, TFES scores, and past project results. No resumes.
+3. Hire & Pay — Escrow-protected. Pay on milestone completion. 60-day money-back guarantee.
+
+#### Trust Signals Strip
+- 80% First-Pass Acceptance Rate
+- <3% Dispute Rate
+- 48hr Average Candidate Match
+- ₹15K vs ₹40K vs Industry Standard
+
+---
+
+### PAGE 4: `/assessment` — Assessment Demo Page
+
+#### Demo Assessment Interface
+Build a fully interactive, mock assessment UI:
+
+**Left sidebar:**
+- Progress tracker: Question 1 of 20
+- Timer countdown: 18:42 remaining
+- Domain tag: "ECE — Circuit Theory"
+- Sections list: Aptitude | Technical | Psychometric | Simulation
+
+**Main content area:**
+- Question display with clean card layout
+- Sample question: "A series RLC circuit has R=10Ω, L=0.1H, C=100μF. At resonance frequency, the impedance is:"
+- 4 multiple choice options as large clickable cards
+- "Mark for Review" button + "Next Question →" button
+
+**Right sidebar:**
+- "Your TFES Score" circular gauge (builds as questions answered, starts at 0)
+- AI hint button: "💡 Get AI Hint"
+- Behavioral note: "We're also measuring: response confidence, time patterns, revision behavior"
+
+After 3 demo questions, show a "Sample Results" modal:
+- TFES Score: 78/100 (animated fill)
+- Breakdown: Technical 82 | Aptitude 75 | Behavioral 77
+- Recommended tier: Practitioner
+- Top domain match: Embedded Systems
+- CTA: "Get Your Real Score — Sign Up Free"
+
+---
+
+### PAGE 5: `/marketplace` — Talent Marketplace Page
+
+#### Filter Bar (sticky top)
+- Search input: "Search projects or skills..."
+- Filter pills: All | ECE | EEE | Mechanical | CS | Business
+- Sort: Newest | Highest Pay | Best Match
+- Budget range slider: ₹5,000 — ₹5,00,000
+
+#### Project Cards Grid (3 columns, 6 sample cards)
+Each card contains:
+- Company logo placeholder (colored initials avatar)
+- Project title (e.g., "Build ESP32-based IoT Dashboard for Factory Floor")
+- Domain badge (e.g., "ECE · Embedded Systems")
+- Budget: "₹18,000 — ₹25,000"
+- Duration: "10 days"
+- Required Tier: "🟡 Practitioner+"
+- Skills tags: ["ESP32", "MQTT", "Python", "AWS IoT"]
+- "5 applicants" + "Posted 2 days ago"
+- Button: `Apply Now →` (gradient)
+
+Sample 6 projects across domains:
+1. IoT sensor dashboard (ECE) — ₹22,000
+2. Motor control PLC simulation (EEE) — ₹18,000
+3. CAD model for gear assembly (Mech) — ₹15,000
+4. Sales funnel automation script (Business) — ₹12,000
+5. ML model for churn prediction (CS/Data) — ₹35,000
+6. React dashboard for HR analytics (CS) — ₹28,000
+
+#### Talent Pool Tab (toggle between Projects / Talent)
+Show talent cards:
+- Avatar (colored initials)
+- Name + Location (e.g., "Arjun K. · Coimbatore")
+- TFES Score badge: "87/100"
+- Tier: "🟠 Expert"
+- Domain: "ECE · Embedded Systems"
+- Tags: ["STM32", "FreeRTOS", "Keil", "C Embedded"]
+- Earned: "₹1,24,000 total"
+- Projects: "23 completed"
+- NFT Badges count: "8 badges"
+- Button: `View Profile` + `Invite to Project`
+
+---
+
+### PAGE 6: `/dashboard/student` — Student Dashboard
+
+Full app-like layout with left sidebar navigation.
+
+**Left Sidebar:**
+- User avatar + name + tier badge
+- Nav items with icons:
+  - 🏠 Home
+  - 🎯 My Missions
+  - 💼 My Projects
+  - 📊 My Score
+  - 🏆 My Badges
+  - 💰 Earnings
+  - 👥 Community
+  - ⚙️ Settings
+
+**Main Content — Dashboard Home:**
+
+Top row (4 stat cards):
+- TFES Score: 82/100 (circular gauge, electric blue)
+- Total Earned: ₹47,500 (green)
+- Projects Completed: 14
+- Badges Earned: 6
+
+Active Missions Section:
+Two mission cards:
+- Mission 1: "Design a Full-Wave Bridge Rectifier" · Due in 3 days · 250 XP · ₹8,000
+- Mission 2: "Write embedded C for UART communication" · Due in 5 days · 180 XP · ₹5,500
+Each card has a progress bar + "Continue →" button
+
+XP Progress Bar:
+- "Level 3 — Practitioner → Expert"
+- Bar: 68% filled, animated, shows "3,400 / 5,000 XP"
+
+Recommended Projects (from AI):
+3 project cards with "AI Match Score: 94%" badge on each
+
+Recent Badge Earned:
+- "🏆 Circuit Simulation Pro" minted as NFT — "View on Polygon →" link
+
+**Left Sidebar Active State:** highlight current page with blue left border accent
+
+---
+
+### PAGE 7: `/dashboard/employer` — Employer Dashboard
+
+**Left Sidebar:**
+- Company logo + name
+- Nav: 🏠 Overview | 📋 My Projects | 👥 Candidates | 📊 Analytics | 💳 Billing | ⚙️ Settings
+
+**Main Dashboard:**
+
+Top stat cards (4):
+- Active Projects: 3
+- Candidates in Pipeline: 47
+- Projects Completed: 18
+- Total Spend: ₹3,24,000
+
+Active Projects Table:
+Columns: Project Name | Budget | Applicants | Status | Action
+3 rows of sample data with status badges (Active / In Review / Completed)
+
+Top Matched Candidates Section:
+3 candidate profile cards showing TFES score, domain, tier, availability
+Each with: `View Profile` + `Invite` buttons
+
+Spend Analytics Chart:
+Line chart showing monthly spend vs savings vs industry average
+
+---
+
+### PAGE 8: `/pricing` — Pricing Page
+
+Title: "Simple, Transparent Pricing"
+Subtitle: "Start free. Pay only when you see value."
+
+**Three pricing tiers in cards:**
+
+1. **Free — Students**
+   - ₹0 forever
+   - Features: Basic assessment, TFES score, 1 project application/month, community access
+   - CTA: `Start Free`
+
+2. **Pro — Students** ⭐ Most Popular
+   - ₹499/month or ₹3,999/year
+   - Features: Unlimited applications, AI career coaching, priority matching, advanced analytics, NFT badge minting included
+   - CTA: `Start Pro Trial`
+   - Highlighted with gradient border + "Most Popular" chip
+
+3. **Employer — Pay Per Hire**
+   - ₹0 to post + 12% of project value on success
+   - Features: AI matching, escrow protection, quality guarantee, verification API access
+   - CTA: `Post First Project Free`
+
+**Institutions / College SaaS — separate section below:**
+Two tiers as horizontal comparison cards:
+- Starter: ₹5L/year — Up to 500 students, basic analytics
+- Enterprise: ₹15L/year — Unlimited students, white-label, API integration, placement analytics
+
+**FAQ Section:** 5 accordion items about pricing, refunds, NFT costs, SaaS contracts
+
+---
+
+### PAGE 9: `/about` — About Page
+
+**Mission Statement Section:**
+Large quote card: "We believe every engineer in India deserves a fair shot — regardless of their city, college, or connections."
+
+**Problem → Solution narrative** (2 column text layout)
+
+**The Team Section:**
+Grid of 4 team member cards:
+- Founder / CEO
+- CTO / AI Lead
+- Head of Product
+- Head of Partnerships
+Each: avatar placeholder, name, role, 1-line bio, LinkedIn icon
+
+**Investors / Advisors Strip:**
+"Backed by angel investors from IIM, IIT, and leading EdTech exits"
+
+**By the Numbers:** same stats strip as homepage
+
+**Press Logos Strip:** placeholder for "As Featured In" media logos
+
+---
+
+## 🔧 TECHNICAL REQUIREMENTS
+
+### Stack
+- **Framework:** React 18 + TypeScript
+- **Styling:** Tailwind CSS (dark mode first) + custom CSS variables
+- **Routing:** React Router v6
+- **State:** React Context + useState/useReducer (no Redux needed)
+- **Charts:** Recharts (for dashboard analytics)
+- **Icons:** Lucide React
+- **Animations:** Framer Motion (scroll reveal, counters, transitions)
+- **Forms:** React Hook Form
+- **Notifications:** React Hot Toast
+
+### Component Architecture
+Create reusable components:
+- `<Navbar />` — sticky, glassmorphism
+- `<HeroSection />` — animated headline
+- `<StatCounter />` — animated number count-up on scroll
+- `<FeatureCard />` — glassmorphism card
+- `<ProjectCard />` — marketplace listing
+- `<TalentCard />` — candidate profile card
+- `<PricingCard />` — pricing tier
+- `<BadgeChip />` — domain / tier tag
+- `<ProgressBar />` — XP / score bar
+- `<TFESGauge />` — circular score gauge (SVG)
+- `<DashboardSidebar />` — collapsible nav
+- `<AssessmentQuestion />` — question card
+- `<MissionCard />` — gamified task card
+
+### Interactivity Requirements
+- All dashboard charts use Recharts with real-looking mock data
+- Assessment page: clicking answers highlights selection, advances question, updates gauge
+- Marketplace filters actually filter the shown cards (client-side)
+- Earnings calculator recomputes on every slider/dropdown change
+- ROI calculator updates instantly
+- Stats strip: numbers count up with Framer Motion when scrolled into view
+- Pricing toggle: Monthly / Annual (annual shows 33% savings)
+- FAQ accordions open/close smoothly
+- All CTA buttons show a toast notification: "🚀 Feature coming soon! Join the waitlist."
+- Mobile hamburger menu with slide-in drawer
+
+### Responsive Design
+- Mobile-first breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
+- Navbar collapses to hamburger on mobile
+- Dashboard sidebar collapses to icon-only on tablet, hidden drawer on mobile
+- All grids: 1 col mobile → 2 col tablet → 3 col desktop
+- Hero: stacked on mobile, side-by-side on desktop
+
+---
+
+## 📁 FILE STRUCTURE
